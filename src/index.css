@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./font/Pretendard-ExtraLight.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("./font/Pretendard-ExtraLight.ttf#iefix") format("true-type"), url("./font/Pretendard-ExtraLight.woff2") format("woff2"), url("./font/Pretendard-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./font/Pretendard-Light.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("./font/Pretendard-Light.ttf#iefix") format("true-type"), url("./font/Pretendard-Light.woff2") format("woff2"), url("./font/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./font/Pretendard-Regular.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("./font/Pretendard-Regular.ttf#iefix") format("true-type"), url("./font/Pretendard-Regular.woff2") format("woff2"), url("./font/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./font/Pretendard-Medium.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("./font/Pretendard-Medium.ttf#iefix") format("true-type"), url("./font/Pretendard-Medium.woff2") format("woff2"), url("./font/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./font/Pretendard-Bold.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("./font/Pretendard-Bold.ttf#iefix") format("true-type"), url("./font/Pretendard-Bold.woff2") format("woff2"), url("./font/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./font/Pretendard-Black.ttf"); /* IE9 Compat Modes */
+  src: local(""), url("./font/Pretendard-Black.ttf#iefix") format("true-type"), url("./font/Pretendard-Black.woff2") format("woff2"), url("./font/Pretendard-Black.woff") format("woff");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primaryColor : #90A959;
+  --secondColor : #ddd;
+  --mainWhite : #fff;
+  --mainBlack : #222;
+  --mainRed : #C45151;
+  --mainGreen : #4CAF50;
+}
+
+* {
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--secondColor);
+  color: var(--mainBlack);
+  font-family: "Pretendard";
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-weight:700;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  text-align:center;
+  letter-spacing:0.5px;
+  font-size:14px;
+  outline:0;
+  border: none;
+  border-radius:2px;
+  display: block;
+  width:100%;
+  height:36px;
+  line-height:36px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all .3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: var(--mainRed);
+  color: var(--mainWhite);
+}
+
+.btn-icon {
+  margin-left:0.75rem;
+  font-size:1.2rem;
 }
