@@ -88,11 +88,11 @@ const App = () => {
       {alert.show ? <Alert type={alert.type} text={alert.text}/> : null}
       <h1>예산 계산기</h1>
 
-      <div style={{width: '100%', backgroundColor: 'white', padding: '1rem'}}>
+      <div style={{width: '100%', backgroundColor: 'white', padding: '1rem', borderRadius:'15px 15px 0 0'}}>
         <ExpenseForm handleCharge={handleCharge} charge={charge} handleAmount={handleAmount} amount={amount} handleSubmit={handleSubmit} edit={edit}/>
       </div>
 
-      <div style={{width: '100%', backgroundColor: 'white', padding: '1rem', boxShadow:'0 8px 5px rgba(0,0,0,.1)'}}>
+      <div style={{width: '100%', backgroundColor: 'white', padding: '1rem', boxShadow:'0 8px 5px rgba(0,0,0,.1)', borderRadius:'0 0 15px 15px'}}>
         <ExpenseList 
           expenses={expenses}
           handleDelete={handleDelete}
