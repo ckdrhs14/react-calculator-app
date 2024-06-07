@@ -92,7 +92,7 @@ const App = () => {
         <ExpenseForm handleCharge={handleCharge} charge={charge} handleAmount={handleAmount} amount={amount} handleSubmit={handleSubmit} edit={edit}/>
       </div>
 
-      <div style={{width: '100%', backgroundColor: 'white', padding: '1rem'}}>
+      <div style={{width: '100%', backgroundColor: 'white', padding: '1rem', boxShadow:'0 8px 5px rgba(0,0,0,.1)'}}>
         <ExpenseList 
           expenses={expenses}
           handleDelete={handleDelete}
@@ -100,7 +100,7 @@ const App = () => {
           />
       </div>
 
-      <div style={{display: 'flex', justifyContent: 'end', marginTop: '1rem'}}>
+      <div style={{display: 'flex', justifyContent: 'end', marginTop: '2rem'}}>
         <p style={{fontSize: '2rem'}}>
           총지출: 
           <span>

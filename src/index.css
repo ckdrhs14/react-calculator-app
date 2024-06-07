@@ -42,7 +42,7 @@
 }
 
 :root {
-  --primaryColor : #90A959;
+  --primaryColor : #4c9dd3;
   --secondColor : #ddd;
   --mainWhite : #fff;
   --mainBlack : #222;
@@ -94,7 +94,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: var(--mainRed);
+  background-color: var(--mainGreen);
   color: var(--mainWhite);
 }
 
